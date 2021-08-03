@@ -1,3 +1,4 @@
+import { PipesJsonComponent } from './components/pipes-json/pipes-json.component';
 import { BindingTwoWayComponent } from './components/binding-two-way/binding-two-way.component';
 import { HomeComponent } from './components/home/home.component';
 import { CoucouComponent } from './exemple/components/coucou/coucou.component';
@@ -13,6 +14,7 @@ const routes: Routes = [
   {path:"two-way", component:BindingTwoWayComponent},
   {path:"event", component:BindingEventComponent},
   {path:"attribute", component:BindingAttributeComponent},
+  {path:"pipe-json", component:PipesJsonComponent},
 ];
 
 @NgModule({

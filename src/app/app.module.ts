@@ -9,6 +9,9 @@ import { BindingTwoWayComponent } from './components/binding-two-way/binding-two
 import { FormsModule } from '@angular/forms';
 import { BindingEventComponent } from './components/binding-event/binding-event.component';
 import { BindingAttributeComponent } from './components/binding-attribute/binding-attribute.component';
+import { PipesDateComponent } from './components/pipes-date/pipes-date.component';
+import { FrenchMonthPipe } from './Pipes/french-month.pipe';
+import { PipesJsonComponent } from './components/pipes-json/pipes-json.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { BindingAttributeComponent } from './components/binding-attribute/bindin
     HomeComponent,
     BindingTwoWayComponent,
     BindingEventComponent,
-    BindingAttributeComponent
+    BindingAttributeComponent,
+    PipesDateComponent,
+    FrenchMonthPipe,
+    PipesJsonComponent
   ],
   imports: [
     BrowserModule,
