@@ -4,6 +4,7 @@ import { CoucouComponent } from './exemple/components/coucou/coucou.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BindingEventComponent } from './components/binding-event/binding-event.component';
+import { BindingAttributeComponent } from './components/binding-attribute/binding-attribute.component';
 
 const routes: Routes = [
   {path:"home", component:HomeComponent , children:[
@@ -11,6 +12,7 @@ const routes: Routes = [
   ]},
   {path:"two-way", component:BindingTwoWayComponent},
   {path:"event", component:BindingEventComponent},
+  {path:"attribute", component:BindingAttributeComponent},
 ];
 
 @NgModule({
