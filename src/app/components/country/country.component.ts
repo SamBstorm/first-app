@@ -22,7 +22,7 @@ export class CountryComponent implements OnInit {
     console.log('fin init');
   }
 
-  private setAllCountries(countries : any[]){
+  private setAllCountries(countries : any){
     this.allCountries = countries;
   }
 

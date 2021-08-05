@@ -1,3 +1,4 @@
+import { Country } from './../Models/country';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
@@ -11,11 +12,11 @@ export class CountryApiService {
 
   constructor(private _http : HttpClient) { }
 
-  public getAllCountries() : Observable<any>{
-    return this._http.get(this._url+'all/');
+  public getAllCountries() : Observable<Country>{
+    return this._http.get<Country>(this._url+'all/');
   }
 
-  public getOneCountry(code : string) : Observable<any>{
-    return this._http.get(this._url+'alpha/'+code);
+  public getOneCountry(code : string) : Observable<Country>{
+    return this._http.get<Country>(this._url+'alpha/'+code);
   }
 }
