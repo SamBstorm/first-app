@@ -10,6 +10,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { BindingEventComponent } from './components/binding-event/binding-event.component';
 import { BindingAttributeComponent } from './components/binding-attribute/binding-attribute.component';
 import { ShopComponent } from './components/shop/shop.component';
+import { CountryComponent } from './components/country/country.component';
 
 const routes: Routes = [
   {path:"home", component:HomeComponent , children:[
@@ -22,7 +23,8 @@ const routes: Routes = [
   {path:"direct-comp", component:DirectCompComponent},
   {path:"direct-struct", component:DirectStructComponent},
   {path:'outputinput', component:ParentComponent},
-  {path:'shop', component:ShopComponent}
+  {path:'shop', component:ShopComponent},
+  {path:'country', component:CountryComponent}
 ];
 
 @NgModule({
